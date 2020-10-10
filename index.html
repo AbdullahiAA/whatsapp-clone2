@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WhatsApp - Clone</title>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/all.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css?_cacheOverride=1602178420685" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="app-body">
+
+	<!-- ********************** SIDE BAR ********************** -->
+	<div class="sidebar">
+		<!-- Side Bar Header -->
+		<div class="sidebar-header">
+			<div class="sidebar-headerLeft">
+				<i class="fas fa-user-circle fa-2x" style="color: rgb(166, 225, 199);"></i>
+			</div>
+
+			<div class="sidebar-headerRight">
+				<i class="fas fa-circle-notch"></i>
+				<i class="far fa-comment-alt"></i>
+				<i class="fas fa-ellipsis-v"></i>
+			</div>
+		</div>
+
+		<!-- Search Bar -->
+		<div class="sidebar-search">
+			<input type="search" name="search" placeholder="Search chat...">
+		</div>
+
+		<!-- Side Bar Chat List -->
+		<div class="sidebar-chat-list">
+			<div class="sidebar-chat-list-item">
+				<div class="chat-list-item-avatar">
+					<i class="fas fa-user-circle fa-3x" style="color: rgb(166, 225, 199);"></i>
+				</div>
+				<div class="chat-list-item-summary">
+					<div class="chat-list-item-summaryLeft">
+						<h3 class="chat-item-name">Abdullah AbdulJelil</h3>
+						<p class="chat-item-lastMsg">This is the last message.</p>
+					</div>
+					<div class="chat-list-item-summaryRight">
+						<p class="chat-item-msgDate"><small>10:51am</small></p>
+						<p class="chat-item-unreadMsg"><small>5</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-chat-list-item">
+				<div class="chat-list-item-avatar">
+					<i class="fas fa-user-circle fa-3x" style="color: rgb(166, 225, 199);"></i>
+				</div>
+				<div class="chat-list-item-summary">
+					<div class="chat-list-item-summaryLeft">
+						<h3 class="chat-item-name">Ridollah</h3>
+						<p class="chat-item-lastMsg">This is the last message.</p>
+					</div>
+					<div class="chat-list-item-summaryRight">
+						<p class="chat-item-msgDate"><small>09:23am</small></p>
+						<p class="chat-item-unreadMsg"><small>1</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-chat-list-item">
+				<div class="chat-list-item-avatar">
+					<i class="fas fa-user-circle fa-3x" style="color: rgb(166, 225, 199);"></i>
+				</div>
+				<div class="chat-list-item-summary">
+					<div class="chat-list-item-summaryLeft">
+						<h3 class="chat-item-name">Ajibike K.A</h3>
+						<p class="chat-item-lastMsg">This is the last message.</p>
+					</div>
+					<div class="chat-list-item-summaryRight">
+						<p class="chat-item-msgDate"><small>Yesterday</small></p>
+						<p class="chat-item-unreadMsg"><small>7</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-chat-list-item">
+				<div class="chat-list-item-avatar">
+					<i class="fas fa-user-circle fa-3x" style="color: rgb(166, 225, 199);"></i>
+				</div>
+				<div class="chat-list-item-summary">
+					<div class="chat-list-item-summaryLeft">
+						<h3 class="chat-item-name">Dr. Kay</h3>
+						<p class="chat-item-lastMsg">This is the last message.</p>
+					</div>
+					<div class="chat-list-item-summaryRight">
+						<p class="chat-item-msgDate"><small>Yesterday</small></p>
+						<p class="chat-item-unreadMsg"><small>27</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-chat-list-item">
+				<div class="chat-list-item-avatar">
+					<i class="fas fa-users fa-3x" style="color: rgb(166, 225, 199);"></i>
+				</div>
+				<div class="chat-list-item-summary">
+					<div class="chat-list-item-summaryLeft">
+						<h3 class="chat-item-name">Junior Web Developers</h3>
+						<p class="chat-item-lastMsg">This is the last message.</p>
+					</div>
+					<div class="chat-list-item-summaryRight">
+						<p class="chat-item-msgDate"><small>Friday</small></p>
+						<p class="chat-item-unreadMsg"><small>557</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ********************** CHAT ********************** -->
+	<div class="chat">
+		<!-- Chat Header -->
+		<section class="chat-header">
+			<!-- Reciever's Avatar -->
+			<div class="chat-receiver-avatar">
+				<i class="fas fa-user-circle fa-2x" style="color: rgb(166, 225, 199);"></i>
+			</div>
+
+			<!-- Receiver's Summary -->
+			<div class="chat-receiver-summary">
+				<h3>Abdullah AbdulJelil</h3>
+				<p>last seen <time datetime="2020-09-24 10:51am">today at 10:51am</time></p>
+			</div>
+
+			<!-- Other Actions -->
+			<div class="chat-other-actions">
+				<i class="fas fa-search fa-1x"></i>
+				<i class="fas fa-ellipsis-v fa-1x"></i>
+			</div>
+		</section>
+
+		<!-- Chat Body -->
+		<section class="chat-body">
+			<div class="message">
+				<p>This is  message from the sender</p>
+			</div>
+
+			<div class="message">
+				<p>This is another message from the sender</p>
+			</div>
+
+			<div class="message">
+				<p>A message from the receiver</p>
+			</div>
+
+		</section>
+
+		<!-- Chat Footer -->
+		<section class="chat-footer">
+			<i class="far fa-smile"></i>&nbsp;&nbsp;&nbsp;
+			<i class="fas fa-paperclip"></i>&nbsp;&nbsp;&nbsp;
+			<div class="chatMsgBox">
+				<input type="text" name="" placeholder="Type a message">
+			</div>
+			<!-- <button class="sendMsg"> -->
+				<i class="fas fa-paper-plane"></i>
+			<!-- </button> -->
+		</section>
+	</div>
+</div>
+
+</body>
+</html>
